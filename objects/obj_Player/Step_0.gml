@@ -22,6 +22,7 @@ if(jump){
 }
 if(jump or (alarm_get(1) != -1 and onground)){
 	if(onground or alarm_get(0) != -1){
+		alarm_set(1, -1);
 		v_spd = jump_spd;
 	}
 	else if(cnt_jumps > 0){
@@ -40,4 +41,3 @@ else{
 move_and_collide();
 
 #endregion
-

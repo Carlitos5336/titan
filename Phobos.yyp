@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"obj_EntityAnimation","path":"objects/obj_EntityAnimation/obj_EntityAnimation.yy",},"order":10,},
     {"id":{"name":"temp_Player","path":"sprites/temp_Player/temp_Player.yy",},"order":1,},
     {"id":{"name":"obj_Ice","path":"objects/obj_Ice/obj_Ice.yy",},"order":8,},
     {"id":{"name":"obj_Input","path":"objects/obj_Input/obj_Input.yy",},"order":4,},
@@ -9,6 +10,7 @@
     {"id":{"name":"temp_Ice","path":"sprites/temp_Ice/temp_Ice.yy",},"order":5,},
     {"id":{"name":"obj_Solid","path":"objects/obj_Solid/obj_Solid.yy",},"order":0,},
     {"id":{"name":"obj_Teleporter","path":"objects/obj_Teleporter/obj_Teleporter.yy",},"order":7,},
+    {"id":{"name":"anim_FallingIntensity","path":"animcurves/anim_FallingIntensity/anim_FallingIntensity.yy",},"order":0,},
     {"id":{"name":"temp_Teleporter","path":"sprites/temp_Teleporter/temp_Teleporter.yy",},"order":4,},
     {"id":{"name":"move_and_collide","path":"scripts/move_and_collide/move_and_collide.yy",},"order":1,},
     {"id":{"name":"temp_Bullet","path":"sprites/temp_Bullet/temp_Bullet.yy",},"order":3,},

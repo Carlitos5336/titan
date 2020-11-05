@@ -10,11 +10,13 @@ function shoot(){
 
 // Follow player
 
-var target_x = global.player.x - x_offset;
-var target_y = global.player.y - y_offset;
+var target_x = target.x - x_offset;
+var target_y = target.y - y_offset;
 
 x = lerp(x, target_x, follow_delay);
 y = lerp(y, target_y, follow_delay);
+
+// ...
 
 image_angle = point_direction(x, y, mouse_x, mouse_y);
 

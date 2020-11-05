@@ -4,7 +4,7 @@
     "path": "sprites/temp_Player/temp_Player.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

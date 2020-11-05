@@ -7,3 +7,9 @@ enum key{
 	right,
 	jump
 }
+
+enum state{
+	landed,
+	air,
+	landing
+}

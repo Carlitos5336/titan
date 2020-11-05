@@ -29,6 +29,8 @@ function reflect(vertical){
 		direction = 360 - direction;
 	}
 	reflected_times += 1;
+	image_xscale = reflect_scale;
+	image_yscale = reflect_scale;
 }
 
 #endregion
@@ -47,3 +49,6 @@ if(place_meeting(x, y, obj_Ice)){
 		instance_destroy();
 	}
 }
+
+image_xscale = lerp(image_xscale, 1, scale_spd);
+image_yscale = lerp(image_yscale, 1, scale_spd);
