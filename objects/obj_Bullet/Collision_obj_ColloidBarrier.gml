@@ -1,7 +1,8 @@
-if(colloid_barrier_hit == noone){
+create_shine();
+if(collisions[hit.colloid_barrier] != other){
 	if(colloided){
 		colloided = false;
-		colloid_barrier_hit = other;
+		collisions[hit.colloid_barrier] = other;
 	}
 	else{
 		instance_destroy();

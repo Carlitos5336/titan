@@ -13,3 +13,10 @@ enum state{
 	air,
 	landing
 }
+
+enum hit{
+	ice,
+	ice_barrier,
+	colloid,
+	colloid_barrier
+}

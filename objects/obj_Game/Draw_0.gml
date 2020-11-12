@@ -12,12 +12,29 @@ for(var i = 0; i < ds_list_size(glows_of_entities); i++){
 	var radius = glows_of_entities[| i][1];
 	var intensity = glows_of_entities[| i][2];
 	
+	var relative_scale = false;
+	if(ds_list_find_index(relative_radius_entities, object) != -1){
+		relative_scale = true;
+	}
+	var relative_alpha = true;
+	
 	with(object){
+		
+		var final_radius = radius;
+		if(relative_scale){
+			final_radius = radius*image_xscale;
+		}
+		var final_alpha = intensity;
+		if(relative_alpha){
+			final_alpha = intensity*image_alpha;
+		}
+		
 		gpu_set_blendmode(bm_add);
-		draw_set_alpha(intensity*image_alpha);
-		draw_circle_color(x, y, radius, c_white, c_black, false);
+		draw_set_alpha(final_alpha);
+		draw_circle_color(x, y, final_radius, c_white, c_black, false);
 		draw_set_alpha(1);
 		gpu_set_blendmode(bm_normal);
+		
 	}
 }
 
